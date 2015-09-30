@@ -1,2 +1,6 @@
-<p><a href="<%=@url%>"><%=@search%> 관련</a></p>
-<a href="/home/index">돌아가기</a>
+<h3><a href="<%=@url_article%>"><%=@want%> 크롤링 카페 페이지</a></h3>
+<h3><a href="<%=@url_post%>"><%=@want%> 크롤링 블로그 페이지</a></h3>
+<%@search.each do |s|%>
+  <p><a href="<%=s.url%>"><%=s.title%></a></p>
+<%end%>
+<h3><a href="/home/index">돌아가기</a></h3>
